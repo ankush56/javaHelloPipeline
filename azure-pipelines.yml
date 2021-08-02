@@ -1,0 +1,17 @@
+trigger:
+- '*'
+
+pool:
+  vmImage: 'ubuntu-20.04'
+  demands:
+  - maven
+
+variables:
+  buildConfiguration: 'Release'
+  env1: 'sit'
+  sec: 'fly'
+  currWorkingDir: 'Tailspin.SpaceGame.Web/wwwroot'
+
+steps:
+- script: './node_modules/.bin/node-sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
+  displayName: 'Compile Sass assets'
