@@ -28,18 +28,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<repositories>
-			<repository>
-				<id>AnkushOrganization</id>
-				<url>https://pkgs.dev.azure.com/AnkushOrganization/_packaging/AnkushOrganization/maven/v1</url>
-				<releases>
-					<enabled>true</enabled>
-				</releases>
-				<snapshots>
-					<enabled>true</enabled>
-				</snapshots>
-			</repository>
-		</repositories>
 	</build>
 
 </project>
