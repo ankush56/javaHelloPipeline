@@ -7,10 +7,8 @@ pool:
   - maven
 
 variables:
-  buildConfiguration: 'Release'
   env1: 'sit'
   sec: 'fly'
-  currWorkingDir: 'Tailspin.SpaceGame.Web/wwwroot'
 
 steps:
 - script: 'echo "Run some random shell commands"'
