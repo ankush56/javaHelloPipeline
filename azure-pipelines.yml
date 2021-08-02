@@ -13,8 +13,8 @@ variables:
   currWorkingDir: 'Tailspin.SpaceGame.Web/wwwroot'
 
 steps:
-- script: './node_modules/.bin/node-sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
-  displayName: 'Compile Sass assets'
+- script: 'echo "Run some random shell commands"'
+  displayName: 'Shell commands'
 
 # Maven
 # Build, test, and deploy with Apache Maven
