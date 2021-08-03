@@ -31,7 +31,7 @@ steps:
 #You need to copy and add artifact, so for me I had to add this code to the end of my .yaml file
 - script: 'echo "hello hello" > sayhello.txt'
   displayName: 'Hello file create'
-  currWorkingDir : 'JAVAHELLOPIPELINE'
+  workingDirectory : 'JAVAHELLOPIPELINE'
 
 #Copy files to target folder
 - task: CopyFiles@2
