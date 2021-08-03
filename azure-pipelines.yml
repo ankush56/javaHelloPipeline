@@ -29,6 +29,14 @@ steps:
     #jdkArchitectureOption: 'x64' # Optional. Options: x86, x64
 
 #You need to copy and add artifact, so for me I had to add this code to the end of my .yaml file
+- script: 'echo "hello hello" > sayhello.txt'
+  displayName: 'Hello file create'
+  currWorkingDir : 'JAVAHELLOPIPELINE'
+
+#Copy files to target folder
+- task: CopyFiles@2
+  inputs:
+    targetFolder: '$(Build.ArtifactStagingDirectory)'    
 
 #Copy files to target folder
 - task: CopyFiles@2
