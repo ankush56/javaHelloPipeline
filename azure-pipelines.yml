@@ -28,10 +28,14 @@ steps:
     #jdkDirectory: # Required when javaHomeOption == Path
     #jdkArchitectureOption: 'x64' # Optional. Options: x86, x64
 
+- script: 'echo "${pwd}"'
+  displayName: 'Current working dir'
+  workingDirectory : 'JAVAHELLOPIPELINE/src'
+
 #You need to copy and add artifact, so for me I had to add this code to the end of my .yaml file
-- script: 'echo "hello hello" > sayhello.txt'
+- script: 'echo "hello2" > sayhello.txt'
   displayName: 'Hello file create'
-  workingDirectory : 'JAVAHELLOPIPELINE'
+  workingDirectory : 'JAVAHELLOPIPELINE/src'
 
 #Copy files to target folder
 - task: CopyFiles@2
